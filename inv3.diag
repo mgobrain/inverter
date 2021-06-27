@@ -1,0 +1,298 @@
+Species data file:  inverter3.species
+Reaction data file:  inverter3.rxns.0.14
+Output Interval:  15
+Output file name base:  inv3
+Number of replicates:  1
+End time:  6000
+Random number seeded with:  1176326087
+The species name is:  di	and for each replicate, the amount is:  10 
+The species name is:  gn	and for each replicate, the amount is:  4.6e+06 
+The species name is:  mi	and for each replicate, the amount is:  0 
+The species name is:  pi	and for each replicate, the amount is:  0 
+The species name is:  pido1	and for each replicate, the amount is:  0 
+The species name is:  pido2	and for each replicate, the amount is:  0 
+The species name is:  pipido	and for each replicate, the amount is:  0 
+The species name is:  pign1	and for each replicate, the amount is:  0 
+The species name is:  pign2	and for each replicate, the amount is:  0 
+The species name is:  pipign	and for each replicate, the amount is:  0 
+The species name is:  do	and for each replicate, the amount is:  10 
+The species name is:  mo	and for each replicate, the amount is:  0 
+
+Name: di->di+mi
+	substrates: di 
+	products: di mi 
+	rate: 0.14
+	type: 10 = 10*reaction rate: 0.14 = 1.4
+
+	reaction graph: di->di+mi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: mi 
+	products: mi pi 
+	rate: 0.0282
+	type: 0 = 0*reaction rate: 0.0282 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pi do 
+	products: pido1 
+	rate: 0.0332
+	type: 0*10 = 0*reaction rate: 0.0332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pi do 
+	products: pido2 
+	rate: 0.0332
+	type: 0*10 = 0*reaction rate: 0.0332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pido1 
+	products: pi do 
+	rate: 0.33
+	type: 0 = 0*reaction rate: 0.33 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pido2 
+	products: pi do 
+	rate: 0.33
+	type: 0 = 0*reaction rate: 0.33 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pido1 pi 
+	products: pipido 
+	rate: 0.0332
+	type: 0*0 = 0*reaction rate: 0.0332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pipido 
+	products: pido1 pi 
+	rate: 0.33
+	type: 0 = 0*reaction rate: 0.33 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pido2 pi 
+	products: pipido 
+	rate: 0.0332
+	type: 0*0 = 0*reaction rate: 0.0332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pipido 
+	products: pido2 pi 
+	rate: 0.33
+	type: 0 = 0*reaction rate: 0.33 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pi gn 
+	products: pign1 
+	rate: 0.00332
+	type: 0*4.6e+06 = 0*reaction rate: 0.00332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pi gn 
+	products: pign2 
+	rate: 0.00332
+	type: 0*4.6e+06 = 0*reaction rate: 0.00332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pign1 pi 
+	products: pipign 
+	rate: 0.00332
+	type: 0*0 = 0*reaction rate: 0.00332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pign2 pi 
+	products: pipign 
+	rate: 0.00332
+	type: 0*0 = 0*reaction rate: 0.00332 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pipign 
+	products: pign1 pi 
+	rate: 3.3
+	type: 0 = 0*reaction rate: 3.3 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pipign 
+	products: pign2 pi 
+	rate: 3.3
+	type: 0 = 0*reaction rate: 3.3 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pign1 
+	products: pi gn 
+	rate: 3.3
+	type: 0 = 0*reaction rate: 3.3 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pign2 
+	products: pi gn 
+	rate: 3.3
+	type: 0 = 0*reaction rate: 3.3 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: do 
+	products: do mo 
+	rate: 1
+	type: 10 = 10*reaction rate: 1 = 10
+
+	reaction graph: mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: pi 
+	products: 
+	rate: 6.42e-05
+	type: 0 = 0*reaction rate: 6.42e-05 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi mi->mi+pi 
+
+
+Name: mi->mi+pi
+	substrates: mi 
+	products: 
+	rate: 0.0115
+	type: 0 = 0*reaction rate: 0.0115 = 0
+
+	reaction graph: mi->mi+pi mi->mi+pi 
+
+
+Priori Q table:
+	Replicate 0
+Time			hc			Name
+ 0.0675634         	10         	mi->mi+pi
+10 = 10*reaction rate: 1 = 10
+Time: 0.0675634	timeArrayPosition: 0	hc: 10	old hc: 0	timeInfinity: 0	last rxn new: 1
+
+  0.458877         	1.4         	di->di+mi
+10 = 10*reaction rate: 0.14 = 1.4
+Time: 0.458877	timeArrayPosition: 1	hc: 1.4	old hc: 0	timeInfinity: 0	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*10 = 0*reaction rate: 0.0332 = 0
+Time: 3.40282e+38	timeArrayPosition: 2	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.0282 = 0
+Time: 3.40282e+38	timeArrayPosition: 3	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.33 = 0
+Time: 3.40282e+38	timeArrayPosition: 4	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.33 = 0
+Time: 3.40282e+38	timeArrayPosition: 5	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*0 = 0*reaction rate: 0.0332 = 0
+Time: 3.40282e+38	timeArrayPosition: 6	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.33 = 0
+Time: 3.40282e+38	timeArrayPosition: 7	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*10 = 0*reaction rate: 0.0332 = 0
+Time: 3.40282e+38	timeArrayPosition: 8	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.33 = 0
+Time: 3.40282e+38	timeArrayPosition: 9	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*4.6e+06 = 0*reaction rate: 0.00332 = 0
+Time: 3.40282e+38	timeArrayPosition: 10	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*4.6e+06 = 0*reaction rate: 0.00332 = 0
+Time: 3.40282e+38	timeArrayPosition: 11	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*0 = 0*reaction rate: 0.00332 = 0
+Time: 3.40282e+38	timeArrayPosition: 12	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*0 = 0*reaction rate: 0.00332 = 0
+Time: 3.40282e+38	timeArrayPosition: 13	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 3.3 = 0
+Time: 3.40282e+38	timeArrayPosition: 14	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 3.3 = 0
+Time: 3.40282e+38	timeArrayPosition: 15	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 3.3 = 0
+Time: 3.40282e+38	timeArrayPosition: 16	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 3.3 = 0
+Time: 3.40282e+38	timeArrayPosition: 17	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0*0 = 0*reaction rate: 0.0332 = 0
+Time: 3.40282e+38	timeArrayPosition: 18	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 6.42e-05 = 0
+Time: 3.40282e+38	timeArrayPosition: 19	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+3.40282e+38         	0         	mi->mi+pi
+0 = 0*reaction rate: 0.0115 = 0
+Time: 3.40282e+38	timeArrayPosition: 20	hc: 0	old hc: 0	timeInfinity: 1	last rxn new: 1
+
+Total time:  0
+

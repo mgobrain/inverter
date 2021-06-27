@@ -1,0 +1,104 @@
+Rxn di->di+mi
+Subs di
+Prods di mi
+Rate 1
+
+Rxn mi->mi+pi
+Subs mi
+Prods mi pi
+Rate .0282
+
+Rxns pi+do->pido1
+Subs pi do
+Prods pido1
+Rate .0332
+
+Rxns pi+do->pido2
+Subs pi do
+Prods pido2
+Rate .0332
+
+Rxns pido1->pi+do
+Subs pido1
+Prods pi do
+Rate .33
+
+Rxns pido2->pi+do
+Subs pido2
+Prods pi do
+Rate .33
+
+Rxns pido1+pi->pipido
+Subs pido1 pi
+Prods pipido
+Rate .0332
+
+Rxns pipido->pido1+pi
+Subs pipido
+Prods pido1 pi
+Rate .33
+
+Rxns pido2+pi->pipido
+Subs pido2 pi
+Prods pipido
+Rate .0332
+
+Rxns pipido->pido2+pi
+Subs pipido
+Prods pido2 pi
+Rate .33
+
+Rxns pi+gn->pign1
+Subs pi gn
+Prods pign1
+Rate .00332
+
+Rxns pi+gn->pign2
+Subs pi gn
+Prods pign2
+Rate .00332
+
+Rxns pign1+pi->pipign
+Subs pign1 pi
+Prods pipign
+Rate .00332
+
+Rxns pign2+pi->pipign
+Subs pign2 pi
+Prods pipign
+Rate .00332
+
+Rxns pipign->pign1+pi
+Subs pipign
+Prods pign1 pi
+Rate 3.3
+
+Rxns pipign->pign2+pi
+Subs pipign
+Prods pign2 pi
+Rate 3.3
+
+Rxns pign1->pi+gn
+Subs pign1
+Prods pi gn
+Rate 3.3
+
+Rxns pign2->pi+gn
+Subs pign2
+Prods pi gn
+Rate 3.3
+
+Rxns do->do+mo
+Subs do
+Prods do mo
+Rate 1
+
+Rxns pi->null
+Subs pi
+Prods
+Rate .0000642
+
+Rxns mi->null
+Subs mi
+Prods
+Rate .0115
